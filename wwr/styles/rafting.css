@@ -13,7 +13,6 @@ body {
 
 a {
     color: var(--primary-color);
-    text-decoration: none;
 }
 
 h2 {
@@ -66,5 +65,8 @@ section img {
 
 .sociallinks img{
     width: 24px;
+}
+.sociallinks a{
+    text-decoration: none;
 }
 
