@@ -33,6 +33,13 @@ a {
 
 h2 {
     color: var(--accent-2);
+    font-family: 'Exo 2', sans-serif;
+}
+
+p {
+    color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
 }
 
 .hero {
