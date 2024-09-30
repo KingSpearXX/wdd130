@@ -5,6 +5,22 @@
     --accent-2: #F26419;
 }
 
+@font-face {
+    font-family : 'Roboto';
+    font-style : normal;
+    font-weight : 900;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmYUtvAw.ttf) format('truetype');
+}
+
+@font-face {
+    font-family : 'Exo 2';
+    font-style : normal;
+    font-weight : 900;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/exo2/v21/7cH1v4okm5zmbvwkAx_sfcEuiD8jF_WcPg.ttf) format('truetype');
+}
+
 body {
     margin: 0 auto;
     max-width: 800px;
