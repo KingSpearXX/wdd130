@@ -1,7 +1,7 @@
 :root {
     --primary-color: #33658A;
     --secondary-color: #86BBD8;
-    --accent-1:  #F6AE2D;
+    --accent-1: #F6AE2D;
     --accent-2: #F26419;
 }
 
@@ -17,7 +17,7 @@ a {
 
 h2 {
     color: var(--accent-2);
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Open+Sans', sans-serif;
 }
 
 p {
@@ -55,18 +55,18 @@ article {
 }
 
 article img {
-   float: right;
-   width: 200px;
+    float: right;
+    width: 200px;
 }
 
 section img {
     width: 500px;
 }
 
-.sociallinks img{
+.sociallinks img {
     width: 24px;
 }
-.sociallinks a{
+
+.sociallinks a {
     text-decoration: none;
 }
-
