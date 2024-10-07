@@ -44,7 +44,7 @@ p {
     padding: 10px;
     text-decoration: none;
     font-family: 'Exo 2', sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 10px;
 }
 
@@ -55,15 +55,10 @@ p {
 .topnav h1 {
     color: var(--accent-2);
     font-family: 'Exo 2', sans-serif;
-    font-size: 3.5em;
+    font-size: 2.5em;
     grid-column: 2 / 3;
     text-align: left;
     padding-left: 20px;
-    text-shadow: 2px 2px 5px rgba(246, 174, 45, 0.5);
-    background: linear-gradient(to top, var(--accent-1), var(--accent-2));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .topnav img {
@@ -93,7 +88,7 @@ footer p {
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
-    background: linear-gradient(to top, white, var(--accent-2));
+    background: linear-gradient(to top, var(--primary-color), var(--accent-2));
     border-radius: 10px;
 }
 
