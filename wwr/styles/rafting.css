@@ -401,6 +401,10 @@ section img {
     border-radius: 100px;
 }
 
+.employees img:hover {
+    background-color: var(--accent-2);
+}
+
 .employees section {
     text-align: center;
     font-family: 'Roboto', sans-serif;
