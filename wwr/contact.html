@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
-      content="Rafting Travel About Us page tells what the company is about"
-    />
-    <meta name="author" content="Rex Roger Rayla" />
-    <link rel="stylesheet" href="styles/rafting.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo%202:ital,wght@0,300..800;1,300..800&family=Bangers&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+      content="Rafting Travel Contact Us page tells what the company is about"
+    >
+    <meta name="author" content="Rex Roger Rayla">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo%202:ital,wght@0,300..800;1,300..800&family=Bangers&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <title>Rafting Travel - About Us</title>
+    <title>Rafting Travel - Contact Us</title>
   </head>
   <body>
     <header>
       <div class="topnav">
-        <img src="images/logo.png" alt="Rafting Travel" />
+        <img src="images/logo.png" alt="Rafting Travel">
         <h1>Rafting Travel</h1>
         <nav>
           <a href="index.html">Home</a>
@@ -29,9 +26,53 @@
           <a href="trips.html">Trips</a>
           <a href="contact.html">Contact</a>
         </nav>
-      </div>
+      </div> 
     </header>
-    <main></main>
+    <main>
+      <form>
+      <div class="contact-form">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12600107.518384974!2d-108.40306209195646!3d39.55514000091238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x871492237223a397%3A0x272b2925fec454dc!2sEcho%20Canyon%20River%20Expeditions!5e0!3m2!1sen!2sph!4v1728864943292!5m2!1sen!2sph" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h1>Contact Us</h1>
+          <fieldset>
+            <h2>Step 1: Enter Your Name</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="name">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <p>Would you like to signup for our newsletter? We promise we are not going to send you spam, and you will always have the option to opt-out.</p>
+            <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+            <label for="newsletter" class="checkboxlabel">Sign up for our newsletter</label>
+            <br><br>
+            <img src="images/1.jpg" alt="Rafting" width="143">
+            <img src="images/2.jpg" alt="Rafting" width="143">
+          </fieldset>
+          <fieldset>
+            <h2>Step 2: Select Your Adventure</h2>
+            <radio>
+              <input type="radio" id="rafting" name="adventure" value="rafting">
+              <label class="radioimage" for="rafting">Rafting</label>
+              <img src="images/radio1.jpg" alt="Rafting">
+  
+              <input type="radio" id="hiking" name="adventure" value="hiking">
+              <label class="radioimage" for="hiking">Hiking</label>
+              <img src="images/radio2.jpg" alt="Hiking"> 
+              
+              <input type="radio" id="zipline" name="adventure" value="zipline">
+              <label class="radioimage" for="zipline">Zipline</label>
+              <img src="images/radio3.jpg" alt="Hiking"> 
+            </radio>
+          </fieldset>
+          <fieldset>
+            <h2>Step 3: Send us your message</h2>
+            <label for="name">Message:</label>
+            <textarea id="message" name="message" required class="textmessage"></textarea>
+            <img src="images/helper.png" class="helper" alt="helper">
+          </fieldset>
+          <input type="submit" value="Submit">
+      </div>
+      </form>
+    </main>
     <footer>
       <p>&copy; 2024 Rafting Travel - Rex Roger Rayla</p>
       <nav class="sociallinks">

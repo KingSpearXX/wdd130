@@ -32,6 +32,149 @@ p {
     align-items: center;
 }
 
+.contact-form {
+    position: relative;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.contact-form iframe {
+    border-radius: 20px;
+    border: 0px;
+    box-shadow: var(--primary-color) 0px 0px 10px;
+    width: 100%;
+    grid-column: span 3;
+}
+
+.contact-form h1 {
+    grid-column: span 3;
+    text-align: center;
+    color: var(--accent-2);
+    font-family: 'Exo 2', sans-serif;
+}
+
+.contact-form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+fieldset {
+    border: 0px;
+    padding: 20px;
+}
+
+fieldset h2 {
+    font-size: 1.10em;
+    color: var(--primary-color);
+}
+
+label {
+    color: var(--accent-2);
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    font-weight: bolder;
+}
+
+.checkboxlabel {
+    display: inline-block;
+    color: var(--accent-2);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+radio img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.radioimage {
+    position: absolute;
+    margin-left: 35px;
+    font-size: 1.5em;
+    color: white;
+    text-shadow:
+        0 0 10px #000,
+        0 0 20px #000,
+        0 0 30px #000;
+    font-family: 'Exo 2', sans-serif;
+}
+
+radio input[type="radio"] {
+    position: absolute;
+    cursor: pointer;
+}
+
+radio input[type="radio"]::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--accent-2);
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+radio input[type="radio"]:checked::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--accent-2);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2em;
+    cursor: pointer;
+    grid-column: span 3;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border-radius: 10px;
+    border: 1px solid var(--accent-2);
+    background-color: var(--accent-2);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    color: white;
+    width: 100%;
+}
+
+.textmessage {
+    height: 145px;
+}
+
+.helper {
+    position: absolute;
+    margin-top: -3%;
+    margin-left: -60px;
+    max-width: 200px;
+}
+
 .topnav nav {
     display: flex;
     gap: 10px;
