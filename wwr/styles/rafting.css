@@ -410,3 +410,86 @@ section img {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-color);
 }
+
+.trips {
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.tripimg {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 10px;
+    padding: 20px;
+    background:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%),
+        url('/images/herobg.jpg');
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+.tripimg img {
+    max-width: 400px;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow:
+        var(--primary-color) 0px 0px 10px,
+        var(--accent-2) 0px 0px 20px;
+}
+
+.tripimg div {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tripimg h1 {
+    font-family: 'Exo 2', sans-serif;
+    color: var(--accent-2);
+    font-size: 2em;
+}
+
+.trips h1 {
+    color: var(--accent-2);
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+}
+
+.trips table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.trips th {
+    background-color: var(--accent-1);
+    color: var(--primary-color);
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2em;
+}
+
+.trips tr {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+.trips tr:nth-child(even) {
+    background-color: var(--secondary-color);
+    color: black
+}
+
+.trips td {
+    padding: 10px;
+    text-align: center;
+}
