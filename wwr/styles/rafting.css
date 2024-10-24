@@ -393,6 +393,8 @@ section img {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-color);
     font-size: 0.4em;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .employees img {
@@ -409,6 +411,9 @@ section img {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: var(--primary-color);
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .trips {
@@ -492,4 +497,181 @@ section img {
 .trips td {
     padding: 10px;
     text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    font: 1em 'Exo 2', sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: var(--accent-2);
+    /* Button hover color */
+}
+
+.homeimage {
+    content: "";
+    width: 99vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%),
+        url('../images/herobg.jpg');
+    background-size: cover;
+    background-blend-mode: screen;
+    filter: blur(3px);
+}
+
+.home {
+    position: relative;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.home h1 {
+    background: linear-gradient(to top, white, var(--secondary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--primary-color);
+    text-shadow: 0 0 10px #ffffff,
+        /* Bright outer glow */
+        0 0 20px #83dcff,
+        0 0 30px #e6f8ff;
+    width: 100%;
+    text-align: center;
+    top: 10%;
+    font-family: 'Bangers', sans-serif;
+    font-size: 6em;
+    letter-spacing: 0.05em;
+}
+
+.home div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: black;
+    font-size: 1.2em;
+    text-shadow:
+        #e6f8ff 0px 0px 10px,
+        #83dcff 0px 0px 20px,
+        #ffffff 0px 0px 30px;
+
+}
+
+
+.newsletterform h2 {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+    margin-top: -15px;
+    margin-bottom: 5px;
+}
+
+.newsletterform {
+    grid-column: span 2;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--accent-2);
+    width: 700px;
+    max-height: 150px;
+    border-radius: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+
+}
+
+.newsletterform img {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: -63px;
+}
+
+.newsletterform form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletterform label {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 0.7em;
+    color: white;
+}
+
+.newsletterform input[type="text"] {
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    font-weight: bolder;
+    color: var(--accent-2);
+    width: 90%;
+    padding: 5px;
+}
+
+.newsletterform input[type="email"] {
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    font-weight: bolder;
+    color: var(--accent-2);
+    width: 90%;
+    padding: 5px;
+}
+
+.newsletterform button {
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 95%;
+}
+
+.homecircles {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+.homecirclebg {
+    background: linear-gradient(to bottom, white, var(--secondary-color));
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.homecirclebg p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 0.9em;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: -70px;
 }
